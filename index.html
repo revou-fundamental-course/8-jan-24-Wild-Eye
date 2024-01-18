@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Katik Persegi</title>
 </head>
+
 <body>
     <header>
-        <h1>Katik <span>Kalkulator Matematik</span></h1>
-        <h4>Welcome to kalkulator Luas dan Keliling Pesergi</h4>
-        <p>Web ini digunakan untuk menghitung Luas dan Keliling Persegi dalam rangka menyelesaikan mini projek renvou </p>
+        <h1>KATIK <span>Kalkulator Matematik</span></h1>
     </header>
+    <nav>
 
-    <div class="inputSection">
-        <label for="squareSide" id="lblSquareSide">Hitung Luas Persergi</label>
-        <input type="number" id="squareSide">
-    </div>
-    <div class="button">
-        <button>Hitung</button>
-        <button>Reset</button>
+    </nav>
+    <div class="div1">
+        <h4>Welcome to KATIK</h4>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung Luas dan Keliling Persegi</p>
+        <hr size="10px" width="70%" align="center">
+        <div class="navdiv">
+            <h5 style="background-color: #C38154;">Luas Persegi</h5>
+            <h5 style="background-color: #884A39;">Keliling Persegi</h5>
+        </div>
+
+        <div class="gambar">
+            <img style="width: 20rem; height: auto;" src="https://o-cdn-cas.sirclocdn.com/parenting/images/Persegi_finirezyhome.wordpress.co.width-500.format-webp.webp"
+                width="150" height="150">
+            <table class="table" id="table">
+                <tr>
+                    <th>
+                        <div class="sisi">
+                            <label for="squareSide">Sisi</label>
+                            <form id="form1">
+                                <input type="number" class="squareSide" id="sisi1">
+                            </form>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="squareSide" class="persegi">Luas Persegi</label>
+                    </td>
+                    <td>
+                        <label for="squareSide" class="persegi">Keliling Persegi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="tulisan" id="hasilLuas"></p>
+                    </td>
+                    <td>
+                        <p class="tulisan" id="hasilKeliling"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="tulisan" id="hasilLuas1"></p>
+                    </td>
+                    <td>
+                        <p class="tulisan" id="hasilKeliling1"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="tulisan" id="hasilLuas2"></p>
+                    </td>
+                    <td>
+                        <p class="tulisan" id="hasilKeliling2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="luas">Hitung</button>
+                    </td>
+                    <td>
+                        <button id="keliling">Hitung</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 15em;">
+                        <button id="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </body>
-</html> 
+<script src="js/script.js"></script>
+
+</html>
